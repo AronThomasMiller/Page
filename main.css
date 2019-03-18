@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+article,
+aside,
+header,
+main,
+section{
+    display: block;
+}
+ul {
+    margin: 0 0 1em 1em;
+}
+
+li {
+    line-height: 1.5em;
+    margin-left: 0.8em;
+}
+
+body {
+    font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+    font-size: 87.5%;
+    min-width: 760px;
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+.nav {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    line-height: 1em;
+    background: #222;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0.5em 1.5em;
+    display: inline;
+    float: left;
+}
+
+.nav ul li {
+    display: inline;
+    float: left;
+    font-size: 1.0em;
+    line-height: 1;
+    list-style-type: none;
+    margin: 0 .25em 0 0;
+    padding: 0;
+}
+.nav ul li a, 
+.nav ul li strong {
+      background: transparent;
+      color: #aaa;
+      display: block;
+      font-size: 1em;
+      line-height: 2em;
+      padding: 0 0.5em;
+      font-weight: normal;
+      text-decoration: none;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+      width: auto;
+}
+
+.nav ul li a:hover,
+.nav ul li a:active {
+  color: #ccc;
+  background: #666;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 0.2em;
+  text-decoration: none;
+  outline: 0 none;
+}
+
+.nav ul li.active {
+  background: #666;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0.2em;
+  color: #fff;
+}
+
+.nav ul li.active strong,
+.nav ul li.active a:active {
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+}
+.search {
+  float: right;
+  display: inline;
+  line-height: 2;
+  padding: 0.5em 1.5em;
+}
+
+.search .searchField {
+  background: #fff;
+  line-height: 1;
+  padding: 0.25em;
+  width: 12em;
+  border: solid 1px #888;
+  border: solid 1px rgba(255, 255, 255, 0.1);
+  outline: none;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.search .searchButton {
+  background: #5f5f5f;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: .2em;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  line-height: 1.25;
+  padding: 0.25em;
+  border: solid 1px transparent;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  background: #444;
+  color: #ccc;
+  padding: 1.5em;
+}
+
+header h1 {
+  background: transparent;
+  color: #fff;
+}
+
+main {
+  padding: 1.5em 0 0 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Droid Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 345%;
+  line-height: 0.875;
+  margin: 0 0 0.43em 0;
+}
+
+h2 {
+  font-size: 228%;
+  line-height: 1.3;
+  margin: 0 0 0.65em 0;
+}
+
+h3 {
+  font-size: 171%;
+  line-height: 0.87;
+  margin: 0 0 0.87em 0;
+}
+
+h4 {
+  font-size: 150%;
+  line-height: 1;
+  margin: 0 0 1em 0;
+}
+
+h5 {
+  font-size: 128%;
+  line-height: 1.16;
+  margin: 0 0 1.16em 0;
+}
+
+h6 {
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0 0 1.5em 0;
+}
+
+p {
+  line-height: 1.5;
+  margin: 0 0 1.5em 0;
+}
+.n {
+    display: block;
+    overflow: hidden;
+    padding-right: 340px;
+    width: auto
+}
+
+.class1 {
+    float: left;
+    width: 100%;
+}
+
+.class1 .columnbox {
+    padding: 0 0.75em 0 1.5em;
+}
+.maincont {
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #888;
+    border-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+    color: #444;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+.button {
+     display: inline-block;
+     border: 1px solid #777;
+     cursor: pointer;
+     text-decoration: none;
+     border-radius: 4px;
+     color: #333;
+     font: 1em/2em Helvetica;
+     padding: 0 25px;
+     background: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+}
+
+.button:hover{
+    background:  #cccccc;
+    background: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+}
+
+.button:before{
+     margin: 0 25px 0 -25px;
+     content: "\279c";
+     background: #ccc;
+     box-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), 2px 0 0 rgba(255, 255, 255, 0.5);
+     border-radius: .10em 0 0 .10em;
+     float: left;
+     width: 25px;
+     text-align: center;
+     font-size: 20px;
+     background: rgba(0, 0, 0, 0.1);
+     padding: 0 .1em;
+}
+
+.gridleft {
+    float: left;
+    margin: 0;
+    width: 50%;
+}
+
+.gridright {
+    float: right;
+    margin: 0 0 0 -5px;
+    width: 50%;
+}
+
+.container {
+    padding: 0 1.5em 0 0;
+}
+
+.aside {
+    margin: 0 20%;
+    position: relative;
+    float: left;
+    width: 340px;
+    margin-left: 0;
+    margin-right: -340px;
+}
+
+.aside .columnbox {
+    padding: 0 20px 0 12px;
+}
+
+footer {
+    
+    margin: 0;
+    background: #eee;
+    color: #444;
+    padding: 1.5em;
+    display: block;
+}
+
+.picture {
+        display: inline;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+        border: 2px white solid;
+        margin: 0 1em 1.5em 0;
+}
